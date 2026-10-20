@@ -4,7 +4,7 @@ function calculateTax(amount) {
   let taxAmount = amount * (taxRate / 100);
   return taxAmount;
 }
-console.log(calculateTax(90000));
+console.log(calculateTax(100000));
 
 
 //a function to convert a text string argument into uppercase letters
@@ -17,11 +17,13 @@ console.log(convertToUpperCase("hello world"));
 function findMaximum(num1, num2) {
   if (num1 < num2) {
     return num2;
-  }else{
+  }else if (num1 == num2){
+    return "condition undefined";
+  }else {
     return num1;
-  }   
+  }
 } 
-console.log(findMaximum(-1000, 100));
+console.log(findMaximum(1000, 100));
 
 //a function that inspects a word string and evaluates whether it is palindrome or not
 function isPalindrome(word) {
@@ -32,7 +34,7 @@ function isPalindrome(word) {
     return false;
   }  
 }
-console.log(isPalindrome("tat"));
+console.log(isPalindrome("gilbert"));
 
 //a function that calculates the final price of an item after discount is applied
 function calculateDiscountedPrice(originalPrice, discountPercentage) {
